@@ -1,0 +1,256 @@
+!! The command to load this file is:
+!! xrdb -load ~/.Xresources
+!! whats different about this?:
+!! xrdb -merge ~/.Xresources
+
+! Dont mess with dpi yet
+!!Xft.dpi: 75
+! This is necessary for both xterm and emacs
+!Xft.dpi: 200
+! Xft.dpi: 180
+!Xft.dpi: 100
+
+! Good with chrome at 150% scale and xterm*faceSize: 13
+!Xft.dpi: 110
+Xft.dpi: 145
+Xft.lcdfilter: lcddefault
+
+! Xft.antialias: false
+! Xft.hinting:false
+Xft.antialias: true
+Xft.hinting:true
+Xft.rgba: rgb
+*customization: -color
+
+Emacs.FontBackend: xft
+! appears not to work. Use (set-default-font "Monospace-10")
+!Emacs.font: Monospace-10
+
+Xcursor.theme: Vanilla-DMZ-AA
+
+xclock*analog:            false
+!this needs capital F
+xclock*Foreground:        white
+xclock*background:        black
+
+! blue is usually too dark to see.  this fixes that
+XTerm*color4: RoyalBlue
+XTerm*color12: RoyalBlue
+!xterm*.faceName: Lucida Sans Typewriter Regular
+!xterm*.faceSize: 10
+! Makes XTerm start with TrueType enabled
+!xterm*faceName: Monospace
+!xterm*faceName: DejaVu Sans Mono:style=Book:antialias=false
+!xterm*faceName: Monospace:style=Bold:antialias=true
+! A square font for DF.
+!xterm*faceName: cootuecursessquare16x16:antialias=false
+! ace
+!xterm*faceName: Monospace:style=Bold:antialias=false
+!xterm*faceName: terminus
+!xterm*boldFont: xft:Monospace:pixelsize=14:style=bold
+!xterm*faceSize: 14
+
+! enable
+xterm*faceName: Monospace:style=Bold:antialias=false
+!!xterm*faceName: terminus
+xterm*boldFont: xft:Monospace:pixelsize=20:style=bold
+
+!! enable
+!xterm*faceName: Standard Galactic Alphabet:style=Bold:antialias=false
+!xterm*boldFont: xft:Standard Galactic Alphabet:pixelsize=20:style=bold
+
+
+!xterm*faceSize: 24
+
+! good -- small
+! xterm*faceSize: 10
+!
+! xterm*faceSize: 14
+! xterm*faceSize: 12
+
+! Best = 13
+! xterm*faceSize: 6
+xterm*faceSize: 8 ! not bad. very small but more realestate
+! ?dpi
+! xterm*faceSize: 10 ! new good!
+! good for dpi of 110
+!xterm*faceSize: 13
+!xterm*faceSize: 13
+!xterm*faceSize: 14
+!xterm*faceSize: 15
+
+
+! ! xterm*faceName: IBM Plex Mono:style=Bold:antialias=false
+! xterm*faceName: IBM Plex Mono:antialias=false
+! ! xterm*boldFont: xft:IBM Plex Mono:pixelsize=20:style=bold
+! xterm*boldFont: xft:IBM Plex Mono:pixelsize=20
+! xterm*faceSize: 20
+
+!xterm*faceName: terminus
+!xterm*faceSize: 8
+
+! nice size
+!XTerm.vt100.boldFont: 6x13bold
+!XTerm.vt100.boldMode: true
+XTerm.*.boldMode: false
+!xterm*faceSize: 12
+!xterm*faceSize: 9
+!xterm*faceSize: 48
+!! Use 10 with xmonad spacing 4 for perfect vim-zathura notetaking
+!xterm*faceSize: 10
+! 7 is good for reading from terminal and programming
+!xterm*faceSize: 7
+! best size for normal DPI is 9
+! ace
+!xterm*faceSize: 9
+!xterm*faceSize: 8
+!xterm*faceSize: 18
+
+!!URxvt*font:     xft:Monaco:pixelsize=14
+!URxvt*boldFont: xft:Monaco:pixelsize=14:style=bold
+
+*pointerShape: arrow
+*pointerColor: red
+xterm*dynamicColors: true
+xterm*pointerColorBackground: black
+!!!!found this in:
+!!!!/home/shane/build/tarballs/xterm-278/XTerm.ad
+!!!!it is the key to getting those unicode characters to show
+
+!! biggest font:
+!*font: -*-fixed-medium-*-*-*-20-*-*-*-*-*-*-*
+!*boldfont: -*-fixed-medium-*-*-*-20-*-*-*-*-*-*-*
+!xterm*font: -*-fixed-medium-*-*-*-20-*-*-*-*-*-*-*
+!xterm*boldfont: -*-fixed-medium-*-*-*-20-*-*-*-*-*-*-*
+
+!! best font:
+!*font: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+!xterm*font: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+
+!!! bold
+!*font: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+!xterm*font: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+
+!*font: -misc-fixed-medium-r-normal--12-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--12-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-medium-r-normal--12-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--12-*-*-*-*-*-iso10646-1
+
+!!! Favorite. cyclops -- bold
+!*font: -misc-fixed-bold-r-normal--12-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--12-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-bold-r-normal--12-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--12-*-*-*-*-*-iso10646-1
+
+! *font: -misc-fixed-*-r-normal--20-*-*-*-*-*-iso10646-1
+! *boldfont: -misc-fixed-*-r-normal--20-*-*-*-*-*-iso10646-1
+! xterm*font: -misc-fixed-*-r-normal--20-*-*-*-*-*-iso10646-1
+! xterm*boldfont: -misc-fixed-*-r-normal--20-*-*-*-*-*-iso10646-1
+
+!!! 2018
+!!*font: -misc-fixed-*-r-normal--20-*-*-*-*-*-*
+!!*boldfont: -misc-fixed-*-r-normal--20-*-*-*-*-*-*
+!xterm*font: -misc-fixed-*-r-normal--20-*-*-*-*-*-*
+!xterm*boldfont: -misc-fixed-*-r-normal--20-*-*-*-*-*-*
+
+!*font: -misc-fixed-*-r-normal--24-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-*-r-normal--24-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-*-r-normal--24-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-*-r-normal--24-*-*-*-*-*-iso10646-1
+
+!!!!! best
+!*font: -misc-fixed-bold-r-normal--13-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--13-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-bold-r-normal--13-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--13-*-*-*-*-*-iso10646-1
+
+!! works with vim-minimap
+!! 2nd best:
+!*font: -misc-fixed-medium-r-normal--13-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--13-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-medium-r-normal--13-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--13-*-*-*-*-*-iso10646-1
+
+!*font: -misc-fixed-medium-r-normal--14-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--14-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-medium-r-normal--14-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--14-*-*-*-*-*-iso10646-1
+
+!*font: -misc-fixed-medium-r-normal--15-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--15-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-medium-r-normal--15-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--15-*-*-*-*-*-iso10646-1
+
+!*font: -misc-fixed-medium-r-normal--16-*-*-*-*-*-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--16-*-*-*-*-*-iso10646-1
+!xterm*font: -misc-fixed-medium-r-normal--16-*-*-*-*-*-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--16-*-*-*-*-*-iso10646-1
+
+xterm*internalBorder: 0
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+!xterm*scrollBar: false
+xterm*scrollbar: false
+xterm*scrollKey: true
+!xterm*saveLines: 1000
+xterm*saveLines: 0
+xterm*eightBitInput: false
+*utf8: 1
+xterm*utf8: 1
+*altSendsEscape: true
+*metaSendsEscape: true
+*backarrowKey: false
+xterm*termName: xterm-256color
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: false
+
+!xterm*background: black
+xterm*background: #050005
+!xterm*foreground: #babdb6
+! This is a really nice off-white (the one I have used for years)
+! xterm*foreground: #babdb6
+! This is also nice
+xterm*foreground: #aaaaaa
+! This is more noticable
+! xterm*foreground: #999999
+*color1:  #ff6565
+*color2:  #93d44f
+*color3:  #eab93d
+*color4:  #204a87
+*color5:  #993370
+*color7:  #ededed
+*color9:  #ff8d8d
+*color10: #c8e7a8
+*color11: #ffc123
+*color12: #3465a4
+*color13: #f970c9
+*color15: #f7f7f7
+vncviewer*compressLevel: 9
+vncviewer*qualityLevel: 5
+xterm*disallowedWindowOps: 20,21,SetXprop,SetSelection,GetSelection
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48
+xterm*keepSelection: false
+xterm*on2Clicks: none
+xterm*on3Clicks: none
+xterm*on4Clicks: none
+xterm*on5Clicks: none
+
+! This stuff breaks M-F1, M-F2 etc
+! ! Make xterm generate extra key sequences
+! XTerm*VT100.translations: #override \
+!    ~Meta Shift<Key>Tab: string(\033[Z) \n\
+!     Meta Shift<Key>Tab: string(\033\033[Z) \n
+
+! xterm*VT100.Translations: #override \n\
+!    ~Meta Shift<Key>Tab: string(\033[Z) \n\
+!     Meta Shift<Key>Tab: string(\033\033[Z) \n
+!   Meta Shift<Key>Delete: string("4") \n\
+!   ~Alt ~Ctrl Shift<Key>BackSpace: string("2") \n\
+!   Alt Shift<Key>BackSpace: string("4") \n\
+!   Ctrl Shift<Key>BackSpace: string("6")
