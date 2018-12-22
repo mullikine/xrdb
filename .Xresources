@@ -215,8 +215,15 @@ xterm*background: #050005
 !xterm*foreground: #babdb6
 ! This is a really nice off-white (the one I have used for years)
 ! xterm*foreground: #babdb6
-! This is also nice
-xterm*foreground: #aaaaaa
+! This is also nice. I just started using this
+! xterm*foreground: #aaaaaa
+! But I was thinking I wouldnt mind a dark navy blue, like vim. But
+! it is ugly
+! xterm*foreground: #8888aa
+! Lighter Bronze -- this isnt bad, actually
+! xterm*foreground: #aa8866
+! Lighter Bronze -- this isnt bad, actually
+xterm*foreground: #ddbb99
 ! This is more noticable
 ! xterm*foreground: #999999
 *color1:  #ff6565
