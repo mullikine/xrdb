@@ -12,7 +12,13 @@
 
 ! Good with chrome at 150% scale and xterm*faceSize: 13
 !Xft.dpi: 110
-Xft.dpi: 145
+! This is the one I used for the 15inch mac
+! Xft.dpi: 145
+! mb2015
+! Xft.dpi: 165
+! Xft.dpi: 200
+! neli
+Xft.dpi: 200
 Xft.lcdfilter: lcddefault
 
 ! Xft.antialias: false
@@ -33,9 +39,6 @@ xclock*analog:            false
 xclock*Foreground:        white
 xclock*background:        black
 
-! blue is usually too dark to see.  this fixes that
-XTerm*color4: RoyalBlue
-XTerm*color12: RoyalBlue
 !xterm*.faceName: Lucida Sans Typewriter Regular
 !xterm*.faceSize: 10
 ! Makes XTerm start with TrueType enabled
@@ -50,10 +53,17 @@ XTerm*color12: RoyalBlue
 !xterm*boldFont: xft:Monospace:pixelsize=14:style=bold
 !xterm*faceSize: 14
 
+! My favourite for 15 macbook 2015
 ! enable
 xterm*faceName: Monospace:style=Bold:antialias=false
 !!xterm*faceName: terminus
 xterm*boldFont: xft:Monospace:pixelsize=20:style=bold
+
+!! enable
+!! I want style=Bold
+!! But I want Chinese characters. Experiment
+!xterm*faceName: WenQuanYiMicroHei:antialias=false:style=Bold
+!xterm*boldFont: xft:WenQuanYiMicroHei:pixelsize=12:style=Bold
 
 !! enable
 !xterm*faceName: Standard Galactic Alphabet:style=Bold:antialias=false
@@ -216,26 +226,34 @@ xterm*background: #050005
 ! This is a really nice off-white (the one I have used for years)
 ! xterm*foreground: #babdb6
 ! This is also nice. I just started using this
-! xterm*foreground: #aaaaaa
+xterm*foreground: #aaaaaa
 ! But I was thinking I wouldnt mind a dark navy blue, like vim. But
 ! it is ugly
 ! xterm*foreground: #8888aa
 ! Lighter Bronze -- this isnt bad, actually
 ! xterm*foreground: #aa8866
 ! Lighter Bronze -- this isnt bad, actually
-xterm*foreground: #ddbb99
+! xterm*foreground: #ddbb99
 ! This is more noticable
 ! xterm*foreground: #999999
 *color1:  #ff6565
 *color2:  #93d44f
 *color3:  #eab93d
-*color4:  #204a87
+! blue is usually too dark to see.  this fixes that
+!XTerm*color4: RoyalBlue
+!XTerm*color12: RoyalBlue
+! This is even better? -- yes
+XTerm*color4: DodgerBlue1
+XTerm*color12: DodgerBlue1
+! *color4:  #204a87
+*color4:  DodgerBlue1
 *color5:  #993370
 *color7:  #ededed
 *color9:  #ff8d8d
 *color10: #c8e7a8
 *color11: #ffc123
-*color12: #3465a4
+! *color12: #3465a4
+*color12: DodgerBlue1
 *color13: #f970c9
 *color15: #f7f7f7
 vncviewer*compressLevel: 9
@@ -261,3 +279,51 @@ xterm*on5Clicks: none
 !   ~Alt ~Ctrl Shift<Key>BackSpace: string("2") \n\
 !   Alt Shift<Key>BackSpace: string("4") \n\
 !   Ctrl Shift<Key>BackSpace: string("6")
+
+!*font: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+!*boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+!xterm*font: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+!xterm*boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+
+
+!! URxvt Appearance
+URxvt*background: #050005
+URxvt*foreground: #aaaaaa
+! My favourite for 15 macbook 2015
+! enable
+!URxvt*font: xft:Monospace:style=Bold:antialias=false
+!URxvt*boldFont: xft:Monospace:pixelsize=20:style=bold
+!!URxvt*faceName: terminus
+URxvt.font: -*-fixed-*-13-*
+URxvt.boldFont: -*-fixed-*-13-*
+URxvt.italicFont: -*-fixed-*-13-*
+URxvt.boldItalicfont: -*-fixed-*-13-*
+!URxvt.font: -*-fixed-*
+!URxvt.boldFont: -*-fixed-*
+!URxvt.italicFont: -*-fixed-*
+!URxvt.boldItalicfont: -*-fixed-*
+!URxvt.font: -*-fixed-*-misc-fixed-medium-r-normal--18-*
+!URxvt.boldFont: -misc-fixed-bold-r-normal--18-*
+!URxvt.italicFont: -misc-fixed-bold-r-normal--18-*
+!URxvt.boldItalicfont: -misc-fixed-bold-r-normal--18-*
+!URxvt.letterSpace: 0
+!URxvt.lineSpace: 0
+!URxvt.geometry: 92x24
+! URxvt.internalBorder: 24
+URxvt.internalBorder: 0
+URxvt.cursorBlink: false
+!URxvt.cursorUnderline: false
+!URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+URxvt.underlineURLs: false
+URxvt.urlButton: 1
+
+! URxvt.keysym.M-s:
+! /usr/lib/urxvt/perl
+! This did the trick
+URxvt.perl-ext:
+URxvt.perl-ext-common:
